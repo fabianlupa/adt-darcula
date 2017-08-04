@@ -15,7 +15,7 @@ Things to change in the settings:
 - ABAP Development
   - Editors
     - Source Code Editors
-      - ABAP Keyword Colors
+      - ABAP Keyword Colors -> This dialog has a separate import/export functionality
 
 Configuration files:
 - $WORKSPACE/.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/color-definitions-fix.css generated file?
