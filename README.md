@@ -19,6 +19,7 @@ Things to change in the settings:
 
 Configuration files:
 - $WORKSPACE/.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/color-definitions-fix.css generated file?
+- $WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings seems to contain all individual settings files
 
 Export / Import:
 - `File -> Export -> Preferences` exports all eclipse settings
