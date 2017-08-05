@@ -18,12 +18,12 @@ Things to change in the settings:
       - ABAP Keyword Colors -> This dialog has a separate import/export functionality
 
 Configuration files:
-- $WORKSPACE/.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/color-definitions-fix.css generated file?
-- $WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings seems to contain all individual settings files
+- `$WORKSPACE/.metadata/.plugins/com.genuitec.eclipse.ui.common.platform/color-definitions-fix.css` generated file?
+- `$WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings` seems to contain all individual settings files
 
 Tracked workspace file changes on configuration change:
 - Changing `General -> Appearance -> Colors and Fonts -> ABAP -> Syntax Coloring -> Comment`
-  - $WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs
+  - `$WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs`
     ```diff
     diff --git a/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs b/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs
     index aa3dc02..3c99e4d 100644
@@ -39,7 +39,7 @@ Tracked workspace file changes on configuration change:
      ```
    - Changes here seem to override the "native" dark theme handling (which might be hard coded to the theme name?)
 - Changing `ABAP Development -> Editors -> Source Code Editors -> ABAP Keyword Colors -> test-injection`
-  - $WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.sap.adt.tools.abapsource.ui.prefs
+  - `$WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.sap.adt.tools.abapsource.ui.prefs`
     ```diff
     diff --git a/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.sap.adt.tools.abapsource.ui.prefs b/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.sap.adt.tools.abapsource.ui.prefs
     index 41f66b6..ad70a7f 100644
@@ -51,6 +51,19 @@ Tracked workspace file changes on configuration change:
      eclipse.preferences.version=1
     ```
   - The settings are XML serialized which explains how the export / import functionality works
+- Changing `General -> Editors -> Text Editors -> Annotations -> ABAP Coverage Full`
+  - `$WORKSPACE/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs`
+    ```diff
+    diff --git a/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs b/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs
+    index 61f3bb8..84425d5 100644
+    --- a/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs
+    +++ b/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs
+    @@ -1,2 +1,4 @@
+    +com.sap.adt.tools.abapsource.coverage.annotation.fullyCovered.color=0,64,0
+    +com.sap.adt.tools.abapsource.coverage.annotation.fullyCovered.text=false
+     eclipse.preferences.version=1
+     overviewRuler_migration=migrated_3.1
+    ```
 
 Export / Import:
 - `File -> Export -> Preferences` exports all eclipse settings
