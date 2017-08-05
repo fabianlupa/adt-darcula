@@ -1,0 +1,6 @@
+com.sap.adt.tools.abapsource.ui.abapMethodBackground=35,38,39
+com.sap.adt.tools.abapsource.ui.default=169,183,198
+com.sap.adt.tools.abapsource.ui.keyword=204,120,50
+com.sap.adt.tools.abapsource.ui.literal=106,135,89
+com.sap.adt.tools.abapsource.ui.literal.number=104,151,187
+com.sap.adt.tools.abapsource.ui.sqlScriptBackground=32,36,37
