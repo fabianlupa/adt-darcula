@@ -1,9 +1,12 @@
 # adt-darcula
 Darcula theme for ABAP Development Tools (ADT)
 
-![Screenshot](https://blogs.sap.com/wp-content/uploads/2017/07/oxygen.png)
+![Screenshot](./screenshot.png)
 
-## WIP
+__See files in folder structure `./metadata`__
+
+## Notes
+
 Things to change in the settings:
 - General
   - Appearance
